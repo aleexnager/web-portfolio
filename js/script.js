@@ -49,6 +49,13 @@ ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
+/*===== scroll langages list =====*/
+
+ScrollReveal().reveal(".lang-box6, .lang-box1", { origin: "top" });
+ScrollReveal().reveal(".lang-box4, .lang-box7", { origin: "bottom" });
+ScrollReveal().reveal(".lang-box2, .lang-box5", { origin: "left" });
+ScrollReveal().reveal(".lang-box3, .lang-box8", { origin: "right" });
+
 /*===== typed js =====*/
 const typed = new Typed(".multiple-text", {
   strings: ["Computer Science Engineer", "Web Developer"],
