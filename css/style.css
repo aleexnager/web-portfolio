@@ -673,7 +673,7 @@ span {
 }
 
 .slider-thumb::before {
-  position: absolute;
+  position: fixed;
   content: "";
   left: 60%;
   top: 40%;
