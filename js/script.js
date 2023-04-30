@@ -64,3 +64,40 @@ const typed = new Typed(".multiple-text", {
   backDelay: 2500,
   loop: true
 });
+
+/*===== hover mobile =====*/
+function showLang() {
+  var base = event.currentTarget.querySelector('.base');
+  var title = event.currentTarget.querySelector('.title');
+  var icon = event.currentTarget.querySelector('.icon');
+
+  if (base.style.filter === 'drop-shadow(0 0 10px var(--color))') {
+    // Si ya se ha modificado el elemento antes, se aplican los estilos iniciales
+    base.style.filter = '';
+    base.style.animationPlayState = '';
+    title.style.transform = '';
+    title.style.color = '';
+    title.style.textShadow = '';
+    title.style.animation = '';
+    title.style.transitionDelay = '';
+    title.style.opacity = '';
+    icon.style.transform = '';
+    icon.style.color = '';
+    icon.style.filter = '';
+    icon.style.animation = '';
+  } else {
+    // Si no se ha modificado antes, se aplican los nuevos estilos
+    base.style.filter = 'drop-shadow(0 0 10px var(--color))';
+    base.style.animationPlayState = 'paused';
+    title.style.transform = 'rotateY(30deg) skewY(-24deg) translateY(-90px)';
+    title.style.color = 'var(--color)';
+    title.style.textShadow = '0 0 10px var(--color)';
+    title.style.animation = 'wave 1s ease-in-out infinite';
+    title.style.transitionDelay = '0.1s';
+    title.style.opacity = '1';
+    icon.style.transform = 'rotateY(30deg) skewY(-24deg) translateY(-160px)';
+    icon.style.color = 'var(--color)';
+    icon.style.filter = 'drop-shadow(0 0 3px var(--color))';
+    icon.style.animation = 'wave 1s ease-in-out infinite';
+  }
+}
