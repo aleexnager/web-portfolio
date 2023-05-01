@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Alex Náger</title>
+
+  <!--  box icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="#about" class="logo">About <span>Me</span></a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about" class="active">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- about section design -->
+  <section class="about slide" id="about">
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Computer science engineer!</h3>
+      <p>As an engineer student I have acquired a set of technical and analytical skills that enable
+        me to efficiently solve complex problems. I feel comfortable working with programming languages
+        and software development technologies, which allows me to quickly adapt to different environments
+        and projects.</p>
+      <p>Additionally, I consider myself a committed and passionate individual about technology, which
+        motivates me to continue learning and improving my skills constantly. I am eager to put my skills
+        and knowledge into practice in a professional setting, and I am confident that I will be able to
+        make a meaningful contribution to any project I am assigned to.</p>
+    </div>
+    <div class="about-img">
+      <img src="img/alexAbout.jpg" alt="Alex Náger">
+    </div>
+  </section>
+
+  <!-- programming langauges section desing -->
+  <section class="skills slide" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="lang1">
+      <ul class="lang-container" id="lang-container">
+        <li style="--color: #ef436b" class="lang-box1" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">HTML5</span>
+          <span class="icon">
+            <i class='bx bxl-html5'></i>
+          </span>
+        </li>
+
+        <li style="--color: #243ff0" class="lang-box2" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">CSS3</span>
+          <span class="icon">
+            <i class='bx bxl-css3'></i>
+          </span>
+        </li>
+
+        <li style="--color: #fcda19" class="lang-box3" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">JavaScript</span>
+          <span class="icon">
+            <i class='bx bxl-javascript'></i>
+          </span>
+        </li>
+
+        <li style="--color: #3ee4ed" class="lang-box4" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">React</span>
+          <span class="icon">
+            <i class='bx bxl-react'></i>
+          </span>
+        </li>
+
+        <li style="--color: #68a063" class="lang-box5" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">Node.js</span>
+          <span class="icon">
+            <i class='bx bxl-nodejs'></i>
+          </span>
+        </li>
+
+        <li style="--color: #ed1d25" class="lang-box6" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">Java</span>
+          <span class="icon">
+            <i class='bx bxl-java'></i>
+          </span>
+        </li>
+
+        <li style="--color: #f1502f" class="lang-box7" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">Git</span>
+          <span class="icon">
+            <i class='bx bxl-git'></i>
+          </span>
+        </li>
+
+        <li style="--color: #fff" class="lang-box8" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">UNIX</span>
+          <span class="icon">
+            <i class='bx bxs-terminal'></i>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="lang2">
+      <ul class="lang-container" id="lang-container">
+        <li style="--color: #ef436b" class="lang-box1" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">HTML5</span>
+          <span class="icon">
+            <i class='bx bxl-html5'></i>
+          </span>
+        </li>
+
+        <li style="--color: #243ff0" class="lang-box2" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">CSS3</span>
+          <span class="icon">
+            <i class='bx bxl-css3'></i>
+          </span>
+        </li>
+
+        <li style="--color: #fcda19" class="lang-box3" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">JavaScript</span>
+          <span class="icon">
+            <i class='bx bxl-javascript'></i>
+          </span>
+        </li>
+
+        <li style="--color: #3ee4ed" class="lang-box4" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">React</span>
+          <span class="icon">
+            <i class='bx bxl-react'></i>
+          </span>
+        </li>
+
+        <li style="--color: #68a063" class="lang-box5" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">Node.js</span>
+          <span class="icon">
+            <i class='bx bxl-nodejs'></i>
+          </span>
+        </li>
+
+        <li style="--color: #ed1d25" class="lang-box6" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">Java</span>
+          <span class="icon">
+            <i class='bx bxl-java'></i>
+          </span>
+        </li>
+
+        <li style="--color: #f1502f" class="lang-box7" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">Git</span>
+          <span class="icon">
+            <i class='bx bxl-git'></i>
+          </span>
+        </li>
+
+        <li style="--color: #fff" class="lang-box8" onclick="showLang()">
+          <span class="base"></span>
+          <span class="title">UNIX</span>
+          <span class="icon">
+            <i class='bx bxs-terminal'></i>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <!-- <a href="aboutme.html" class="btn">See More</a> -->
+  </section>
+
+  <!-- portfolio development design -->
+  <section class="portdev slide" id="portdev">
+    <div class="portdev-content">
+      <h2 class="heading">What can I <span>Offer</span></h2>
+      <h3>Computer science engineer!</h3>
+      <p>WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...
+        WORK IN PROGRESS....WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...</p>
+      <p>WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...
+        WORK IN PROGRESS....WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...</p>
+      <p>WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...
+        WORK IN PROGRESS....WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...WORK IN PROGRESS...</p>
+    </div>
+    <div class="about-img">
+      <img src="img/alexAbout.jpg" alt="Alex Náger">
+    </div>
+  </section>
+
+  <!-- footer section design -->
+  <footer class="footeralt">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023 Alex Náger | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#about"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- custon JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
