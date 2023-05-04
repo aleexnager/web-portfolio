@@ -868,6 +868,14 @@ span {
     margin-top: 4rem;
   }
 
+  .cvlinks-box {
+    height: 11vh;
+  }
+
+  .cv-content {
+    width: 85vw;
+  }
+
   .slider-thumb {
     display: none;
   }
