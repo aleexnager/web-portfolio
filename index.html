@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- 1:01:30 -->
 <html lang="en">
 
 <head>
@@ -7,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio Website | Alex Náger</title>
+  <link rel="shortcut icon" href="gustavo.jpg">
 
   <!--  box icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -17,7 +17,7 @@
 
 <body>
   <header class="header">
-    <a href="#" class="logo">Portfolio</a>
+    <a href="#portfolio" class="logo">Portfolio</a>
 
     <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -36,20 +36,23 @@
       <h3>Hello, it's me</h3>
       <h1>Alex Náger</h1>
       <h3>And I'm a <span class="multiple-text"></span></h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Tempore aliquam, modi aspernatur placeat architecto amet laudantium id.</p>
+      <p>Welcome to my website! I'm a student at the Polytechnic University of Madrid (UPM)
+        studying computer science engineering. I'm passionate about technology and constantly seeking
+        to learn new things and stay up-to-date with the latest trends in the computer world.</p>
       <div class="social-media">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class='bx bxl-instagram-alt'></i></a>
         <a href="https://twitter.com/aleexnager"><i class='bx bxl-twitter'></i></a>
-        <a href="https://www.instagram.com/aleexnager/"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://github.com/aleexnager"><i class='bx bxl-github'></i></a>
         <a href="https://www.linkedin.com/in/alejandro-n%C3%A1ger-95b1791b7"><i class='bx bxl-linkedin'></i></a>
       </div>
-      <a href="#" class="btn">Download CV</a>
+      <a href="#" class="btn">Download Resume</a>
     </div>
 
     <div class="home-img">
       <img src="img/alexHome.jpg" alt="Alex Náger">
     </div>
+
+    <div class="slider-thumb"></div>
 
   </section>
 
@@ -61,67 +64,70 @@
 
     <div class="about-content">
       <h2 class="heading">About <span>Me</span></h2>
-      <h3>Fullstack Developer!</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, autem.
-        Perspiciatis, neque cupiditate nihil distinctio accusantium nesciunt qui,
-        omnis eaque a quas ea tenetur esse officiis! Saepe molestiae quo impedit
-        cupiditate doloribus error suscipit expedita accusamus ducimus facilis
-        voluptatum eveniet qui, quod iusto officiis inventore architecto!</p>
-      <a href="#" class="btn">Read More</a>
+      <h3>Computer science engineer!</h3>
+      <p>As an engineer student I have acquired a set of technical and analytical skills that enable
+        me to efficiently solve complex problems. And as a computer science student I feel comfortable
+        working with programming languages and software development technologies, which allows me to
+        quickly adapt to different environments and projects.</p>
+      <div class="btns">
+        <a href="aboutme.html" class="btn">Read More</a>
+        <a href="resume.html" class="btn">Read Resume</a>
+      </div>
     </div>
   </section>
 
   <!-- services section design -->
   <section class="services" id="services">
-    <h2 class="heading">Our <span>Services</span></h2>
+    <h2 class="heading">What can I <span>Offer</span></h2>
 
     <div class="services-container">
       <div class="services-box">
         <i class='bx bx-code-alt'></i>
-        <h3>Web Development</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, magni vero?
-          Dolore, voluptatibus nam ullam eum dolor illum officiis.</p>
-        <a href="#" class="btn">Read More</a>
+        <h3>Coding knowledge</h3>
+        <p>I work with different tools always trying to stay up-to-date with new
+          technologies. I'm currently focused on improving my backend skills.</p>
+        <a href="aboutme.html#skills" class="btn">Read More</a>
       </div>
 
       <div class="services-box">
         <i class='bx bxs-paint'></i>
-        <h3>Graphic Design</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, magni vero?
-          Dolore, voluptatibus nam ullam eum dolor illum officiis.</p>
-        <a href="#" class="btn">Read More</a>
+        <h3>Latest Projects</h3>
+        <p>Feel free to review some of the projects I have completed to get a better
+          understanding of my skills and capabilities over these years.</p>
+        <a href="#portfolio" class="btn">Read More</a>
       </div>
 
       <div class="services-box">
-        <i class='bx bx-bar-chart-alt'></i>
-        <h3>Digital Marketing</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, magni vero?
-          Dolore, voluptatibus nam ullam eum dolor illum officiis.</p>
-        <a href="#" class="btn">Read More</a>
+        <i class='bx bx-spreadsheet'></i>
+        <h3>Resume</h3>
+        <p>I'm young, full of energy and looking forward working with you. Go check my
+          resume and lets talk about some more serious work.</p>
+        <a href="resume.html#cv" class="btn">Read More</a>
       </div>
     </div>
   </section>
 
   <!-- portfolio section design -->
   <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Project</span></h2>
+    <h2 class="heading">Latest <span>Projects</span></h2>
 
     <div class="portfolio-container">
       <div class="portfolio-box">
-        <img src="img/portfolio1.jpg" alt="">
+        <img src="img/fullstack.jpg" alt="">
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, nisi.</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+          <h4>Full Stack Open</h4>
+          <p>React, Redux, Node.js, MongoDB, GraphQL and TypeScript fullstack course.</p>
+          <a href="aboutme.html#port1"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
       <div class="portfolio-box">
         <img src="img/portfolio2.jpg" alt="">
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, nisi.</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+          <h4>NodeJS Realtime Chat</h4>
+          <p>I built a full-stack realtime chat application totally functional which can be
+            used in a social media app.</p>
+          <a href="aboutme.html#port2"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
@@ -130,7 +136,7 @@
         <div class="portfolio-layer">
           <h4>Web Design</h4>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, nisi.</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+          <a href="aboutme.html#port3"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
@@ -139,7 +145,7 @@
         <div class="portfolio-layer">
           <h4>Web Design</h4>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, nisi.</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+          <a href="aboutme.html#port4"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
@@ -148,16 +154,16 @@
         <div class="portfolio-layer">
           <h4>Web Design</h4>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, nisi.</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+          <a href="aboutme.html#port5"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
 
       <div class="portfolio-box">
-        <img src="img/portfolio6.jpg" alt="">
+        <img src="img/GitHub.jpg" alt="">
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, nisi.</p>
-          <a href="#"><i class='bx bx-link-external'></i></a>
+          <h4>GitHub</h4>
+          <p>I usually upload a lot of my projects to GitHub. Go check them out!</p>
+          <a href="https://github.com/aleexnager"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
     </div>
@@ -169,14 +175,14 @@
 
     <form action="https://formspree.io/f/xdovypnd" method="POST">
       <div class="input-box">
-        <input type="text" placeholder="Full Name" name="name">
-        <input type="email" placeholder="Email Address" name="email">
+        <input type="text" placeholder="Full Name" name="name" required>
+        <input type="email" placeholder="Email Address" name="email" required>
       </div>
       <div class="input-box">
         <input type="number" placeholder="Mobile Number" name="phonenumber">
-        <input type="text" placeholder="Email Subject" name="subject">
+        <input type="text" placeholder="Email Subject" name="subject" required>
       </div>
-      <textarea id="" cols="30" rows="10" placeholder="Your Message" name="message"></textarea>
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
       <input type="submit" value="Send Message" class="btn">
     </form>
   </section>
